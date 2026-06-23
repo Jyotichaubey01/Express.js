@@ -1,0 +1,174 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav-logo{
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:600;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+/* Express Heading */
+.express-info{
+    max-width:1000px;
+    margin:50px auto;
+    text-align:center;
+    padding:40px;
+}
+
+.express-info h1{
+    font-size:50px;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.express-info p{
+    font-size:20px;
+    color:#555;
+}
+
+/* Cards */
+.container{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.square-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.square-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.square-box h2{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+/* Middleware Section */
+.guide-section{
+    width:90%;
+    max-width:1000px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.guide-section h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.guide-section h3{
+    margin-top:30px;
+    color:#0f172a;
+}
+
+pre{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    overflow-x:auto;
+    margin:20px 0;
+}
+
+code{
+    color:#f59e0b;
+}
+
+/* Footer */
+.site-footer{
+    background:#0f172a;
+    color:white;
+    padding:50px;
+    margin-top:60px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.footer-col a{
+    display:block;
+    color:#cbd5e1;
+    text-decoration:none;
+    margin:10px 0;
+}
+
+.footer-col a:hover{
+    color:#38bdf8;
+}
+
+.footer-bottom{
+    border-top:1px solid #334155;
+    margin-top:30px;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:20px;
+    }
+
+    .express-info h1{
+        font-size:36px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+    }
+}
